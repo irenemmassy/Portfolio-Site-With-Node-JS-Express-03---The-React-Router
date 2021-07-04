@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/gifs/logo.png"
+      type="image/x-icon"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- END SMALL DEVICE -->
+        <div class="nav">
+          <div class="nav1">
+            <a href="../index.html">
+              <img src="../assets/images/gifs/logo2.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav2">
+            <div class="menu"><a href="../index.html#about">about Me</a></div>
+            <div class="menu">
+              <a href="../index.html#services">services</a>
+            </div>
+            <div class="menu"><a href="#">Blogs</a></div>
+            <div class="menu"><a href="portifolio.html">Portifolio</a></div>
+            <div class="menu">
+              <a href="../index.html#contact">contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Header Section -->
+
+    <!-- APP SCREEN -->
+    <div class="banner">
+      <div class="overlay">
+        <div class="container">
+          <h1>My Recent Mobile Apps</h1>
+          <button>
+            <a href="">Home</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container blogcontainer">
+      <div class="row">
+        <div class="blogBox col-lg-4 col-md-6 col-sm-6">
+          <div class="blogBox_pic">
+            <img src="../assets/images/portifolio/pot4.png" alt="" />
+            <div class="blogLebal">
+              <a href="">Project Details</a>
+            </div>
+          </div>
+          <div class="blog_text">
+            <ul>
+              <li><i class="far fa-calendar"></i> 12 May 2021</li>
+            </ul>
+            <h5>
+              <a href="">Sell & Bull App</a>
+            </h5>
+            <p>
+              I enjoy creating things that live on the internet, whether that be
+              websites, applications, or anything in between...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- APP SCREEN END -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footerContainer">
+          <div class="footerLogo">
+            <img src="../assets/images/gifs/logo2.png" alt="Logo" />
+          </div>
+          <div class="footerNav">
+            <p><a href="../index.html#about">About me</a></p>
+            <p><a href="../index.html#services">services</a></p>
+            <p><a href="#">blogs</a></p>
+            <p><a href="portifolio.html">Portifolio</a></p>
+            <p><a href="../index.html#contact">contact me</a></p>
+          </div>
+          <div class="footerMedias">
+            <div class="footerMedia">
+              <a href="https://www.linkedin.com/in/laura-irene-paul"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="footerMedia">
+              <a href="https://www.facebook.com/irene.mmassy.1466"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="footerMedia">
+              <a href="https://www.instagram.com/minaheryy/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="footerMedia">
+              <a href="https://www.behance.net/laummassy01ce"
+                ><i class="fab fa-behance"></i
+              ></a>
+            </div>
+            <div class="footerMedia">
+              <a href="https://github.com/irenemmassy"
+                ><i class="fab fa-github-alt"></i
+              ></a>
+            </div>
+          </div>
+          <span>Copyright ©2020 All rights reserved </span>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="../assets/js/owl.carousel.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script>
+      window.addEventListener("load", myLoad);
+      function myLoad() {
+        document.querySelector(".preloader").style.display = "none";
+      }
+
+      // slider
+      $(".Event").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        nav: false,
+        smartSpeed: 1000,
+        autoHeight: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+      });
+
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+
+      // SMALL DEVICE
+      function openNav() {
+        document.getElementById("mySidenav").style.left = "0";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.left = " -100%";
+      }
+    </script>
+  </body>
+</html>
